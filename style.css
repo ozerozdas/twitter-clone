@@ -1,0 +1,152 @@
+html, body, p, h1{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .left-side{
+    width: 275px;
+    height: 100vh;
+    border-right: 1px solid gray;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .left-side .menu .logo{
+    color: white;
+    font-size: 40px;
+    padding: 5px;
+}
+.container .left-side .menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.container .left-side .menu ul a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 22px;
+    border-radius: 40px;
+}
+.container .left-side .menu ul a:hover{
+    background-color: rgb(48, 48, 48);
+}
+.container .left-side .menu ul .fa{
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+.container .left-side .submit{
+    width: calc(100% - 20px);
+    padding: 20px;
+    background-color: rgb(10, 162, 232);
+    border: none;
+    margin: 20px 10px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.container .left-side .profile{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 40px;
+}
+.container .left-side .profile:hover{
+    background-color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+.container .right-side{
+    width: 350px;
+    height: 100vh;
+    border-left: 1px solid gray;
+    overflow-y: scroll;
+}
+
+.container .right-side .search{
+    background-color: rgb(48, 48, 48);
+    margin: 5px 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.container .right-side .search input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.container .right-side .search input:focus{
+    outline: none;
+}
+
+.container .right-side .widget{
+    background-color: rgb(48, 48, 48);
+    margin: 5px 20px;
+    border-radius: 20px;
+    padding: 15px
+}
+.container .right-side .widget h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.container .right-side .widget .content p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.container .right-side .widget .content .subscribe{
+    background-color: rgb(10, 162, 232);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.container .right-side .widget .content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container .right-side .widget .content ul a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 5px;
+    display: block;
+    transition: all .1s;
+}
+.container .right-side .widget .content ul a:hover{
+    background-color: gray;
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
