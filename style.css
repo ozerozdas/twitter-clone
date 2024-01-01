@@ -136,17 +136,3 @@ body{
 .container .right-side .widget .content ul a:hover{
     background-color: gray;
 }
-
-
-::-webkit-scrollbar {
-    width: 4px;
-}
-::-webkit-scrollbar-track {
-    background: #2e2e2e;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-   background: #555;
-}
