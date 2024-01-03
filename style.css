@@ -70,6 +70,140 @@ body{
     background-color: rgb(48, 48, 48);
     cursor: pointer;
 }
+
+main {
+    width: 573px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+main .head{
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+main .head ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .head ul a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+main .compose{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+main .compose .photo{
+    padding: 10px
+}
+main .compose .photo img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+main .compose .input{
+    padding: 10px;
+    width: 100%;
+}
+main .compose .input textarea{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    resize: none;
+    font-size: 22px;
+    padding: 10px 0;
+    color: white;
+}
+main .compose .input textarea:focus{
+    outline: transparent;
+}
+main .compose .input .input-footer{
+    display: flex;
+    justify-content: space-between;
+}
+main .compose .input .input-footer .buttons{
+    display: flex;
+}
+main .compose .input .input-footer .buttons button{
+    border: none;
+    background-color: transparent;
+    color: rgb(10, 162, 232);
+    font-size: 18px;
+}
+main .compose .input .input-footer .submit{
+    border: none;
+    background-color: rgb(10, 162, 232);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+main .posts{
+    width: 100%;
+}
+main .posts .post{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+main .posts .post .photo img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+main .post .content{
+    width: 100%;
+    padding: 0 10px;
+}
+main .post .content .info{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+main .post .content .info .user a {
+    color: grey;
+    text-decoration: none;
+}
+main .post .content .info .user a:first-child{
+    color: white;
+    font-weight: bold;
+}
+main .post .content .info button{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    margin: 0 20px
+}
+
+main .post .content p{
+    margin: 10px 0;
+}
+main .post .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+main .post .buttons button{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+main .post .buttons button .fa{
+    font-size: 18px;
+}
+
 .container .right-side{
     width: 350px;
     height: 100vh;
